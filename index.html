@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Converting JSON object int o YAML schema</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="convert.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="parent">
+        <div class="div1">
+            <h1>Generate YAML Schema from JSON</h1>
+        </div>
+
+        <div class="div2 col">
+            <h2>JSON</h2>
+            <div id="error" style="color: red; height: 20px"></div>
+            <textarea title="JSON Code" id="json_code"></textarea>
+        </div>
+        <div class="div3 col centered">
+            <button class="largeFont" onclick="convert()">&rharu;</button>
+        </div>
+        <div class="div4 col">
+            <h2>YAML</h2>
+            <div id="error2" style="color: red; height: 20px"></div>
+            <textarea title="YAML Code" id="yaml_code"></textarea>
+        </div>
+    </div>
+</body>
+</html>
